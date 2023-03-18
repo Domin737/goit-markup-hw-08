@@ -2,6 +2,12 @@
   display: none;
 }
 
+@media (min-width: 1200px) {
+  .what-we-do {
+    display: block;
+  }
+}
+
 .what-we-do__main-figure-items {
   display: flex;
   gap: 30px;
@@ -15,7 +21,7 @@
 }
 
 .what-we-do__img-item {
-  max-width: 100%;
+  width: 100%;
   display: block;
   height: auto;
 }
@@ -36,4 +42,7 @@
   background-color: rgba(47, 48, 58, 0.8);
   color: $whiteColor;
   bottom: 0;
+}
+
+@media (min-width: 1200px) {
 }
