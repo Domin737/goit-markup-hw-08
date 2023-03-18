@@ -13,8 +13,8 @@
     url(../images/header-background.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  // background-size: 1600px;
-  background-size: cover;
+  background-size: 1600px;
+  // background-size: cover;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -29,8 +29,8 @@
 
 .main-header__text {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 60px;
+  font-size: 26px; // font-size: 44px;
+  line-height: 42px; // line-height: 60px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -70,4 +70,11 @@
 
   transition: color 0.25s, filter 0.25s, box-shadow 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 1200px) {
+  .main-header__text {
+    font-size: 44px;
+    line-height: 60px;
+  }
 }

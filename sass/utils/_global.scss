@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
   padding: 0;
@@ -7,17 +11,26 @@ body {
 }
 
 .container {
-  width: 1200px;
-  padding: 0;
+  width: 100%; // width: 1200px;
+  // min-width: 320px;
   margin: 0 auto;
   padding: 0 15px;
 }
 
 .section-header {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  // font-size: 36px;
+  font-size: 28px;
+  // line-height: 42px;
+  line-height: 32px;
   text-align: center;
   color: $headerColor;
   margin: 0 0 50px 0;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0;
+  }
 }

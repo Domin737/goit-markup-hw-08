@@ -38,7 +38,7 @@
 }
 
 .nav__links {
-  display: flex;
+  display: none; // display: flex;
   list-style: none;
   gap: 46px;
   margin: 0;
@@ -62,7 +62,7 @@
   height: 4px;
   border-radius: 2px;
   position: relative;
-  top: 29px;
+  top: 37px; // top: 29px;
   transition: background-color 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -80,7 +80,9 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  gap: 50px;
+  gap: 10px; // gap: 50px;
+  display: none;
+  flex-direction: column;
 }
 
 .contact-links__link {

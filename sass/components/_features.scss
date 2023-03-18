@@ -7,9 +7,9 @@
   list-style: none;
 }
 
-.main-features-card__item {
-  flex-basis: calc((100% - 90px) / 4);
-}
+// .main-features-card__item {
+//   flex-basis: calc((100% - 90px) / 4);
+// }
 
 .main-features-card__icon-container {
   display: flex;
@@ -28,6 +28,8 @@
   text-transform: uppercase;
   margin: 0 0 10px 0;
   color: $headerColor;
+
+  text-align: center;
 }
 
 .main-features-card__paragraph {
@@ -36,4 +38,16 @@
   line-height: 24px;
   margin: 0;
   color: $textColor;
+}
+
+@media (min-width: 768px) {
+  .main-features-card__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-features-card__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }

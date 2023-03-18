@@ -4,15 +4,17 @@
 
 .main-our-clients__wrapper {
   display: flex;
-  gap: 30x;
+  gap: 30px;
   justify-content: space-between;
+
+  flex-wrap: wrap;
 }
 
 .main-our-clients__link {
   color: $iconColor;
   text-decoration: none;
   display: flex;
-  width: 172px;
+  flex-basis: calc((100% - 30px) / 2); // width: 172px;
   height: 92px;
   justify-content: center;
   align-items: center;
@@ -29,4 +31,16 @@
   outline: none;
   transition: color 0.25s, border-color 0.25s;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 768px) {
+  .main-our-clients__link {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-our-clients__link {
+    flex-basis: calc((100% - 150px) / 6);
+  }
 }
