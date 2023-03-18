@@ -1,0 +1,32 @@
+.main-our-clients {
+  padding: 94px 0;
+}
+
+.main-our-clients__wrapper {
+  display: flex;
+  gap: 30x;
+  justify-content: space-between;
+}
+
+.main-our-clients__link {
+  color: $iconColor;
+  text-decoration: none;
+  display: flex;
+  width: 172px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $iconColor;
+  border-radius: 4px;
+  transition: color 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main-our-clients__link:hover,
+.main-our-clients__link:focus {
+  color: $blueColor;
+  border-color: $blueColor;
+  outline: none;
+  transition: color 0.25s, border-color 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

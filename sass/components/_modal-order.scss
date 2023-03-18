@@ -1,0 +1,161 @@
+.order-service-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $headerColor;
+}
+
+.order-service-container {
+  position: relative;
+  margin: 0 40px;
+}
+
+.form-group--name,
+.form-group--phone,
+.form-group--email,
+.form-group--comment,
+.form-group--statement {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $textColor;
+}
+
+.form-textarea--comment {
+  resize: none;
+  width: 100%;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-textarea--comment::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.form-textarea--comment:focus,
+.form-textarea--comment:hover {
+  border: 1px solid $blueColor;
+  outline: none;
+}
+
+.order-service-icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 12px;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px 40px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+}
+
+.form-input:focus,
+.form-input:hover {
+  border: 1px solid $blueColor;
+  outline: none;
+}
+
+.form-input:focus + .order-service-icon > .form-icon,
+.form-input:hover + .order-service-icon > .form-icon {
+  fill: $blueColor;
+}
+
+.accept {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.checked {
+  display: none;
+}
+
+.form-label-submit {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  line-height: 24px;
+  color: $textColor;
+  cursor: pointer;
+}
+
+.accept:checked ~ .checked {
+  display: inline-block;
+}
+
+.accept:checked ~ .not-checked {
+  display: none;
+}
+
+.form-link {
+  font-size: 14px;
+  line-height: 24px;
+
+  text-decoration-line: underline;
+
+  color: $blueColor;
+}
+
+.submit-button-container--primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0 40px 0;
+}
+
+.submit-button--primary {
+  border: none;
+  border-radius: 4px;
+  background-color: $blueColor;
+
+  color: $whiteColor;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+
+  padding: 10px 76px;
+
+  cursor: pointer;
+}
+
+.submit-button--primary:hover,
+.submit-button--primary:focus {
+  background-color: $blueColor;
+  color: $whiteColor;
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  outline: none;
+
+  transition: color 0.25s, background-color 0.25s, filter 0.25s,
+    box-shadow 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

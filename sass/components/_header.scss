@@ -1,0 +1,116 @@
+.header-wrapper {
+  border-bottom: 1px solid $borderColor;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0;
+}
+
+.nav {
+  display: flex;
+  gap: 93px;
+  align-items: center;
+}
+
+/* ----------------- logo ----------------- */
+
+.logo--text {
+  font-family: $fontRaleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  color: $headerColor;
+  text-decoration: none;
+}
+
+.logo--text-primary {
+  color: $blueColor;
+}
+
+.logo--text:focus {
+  color: $blueColor;
+  outline: none;
+  transition: color 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__links {
+  display: flex;
+  list-style: none;
+  gap: 46px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: $headerColor;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.nav__link--active::after {
+  content: "";
+  width: 100%;
+  display: block;
+  background-color: $blueColor;
+  height: 4px;
+  border-radius: 2px;
+  position: relative;
+  top: 29px;
+  transition: background-color 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav__link:hover,
+.nav__link:focus {
+  color: $blueColor;
+  outline: none;
+  transition: color 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-links {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: 50px;
+}
+
+.contact-links__link {
+  text-decoration: none;
+  color: $textColor;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.contact-links__link:hover,
+.contact-links__link:focus {
+  color: $blueColor;
+  outline: none;
+  transition: color 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon--envelope,
+.icon--smartphone {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.icon--envelope:hover,
+.icon--envelope:focus,
+.icon--smartphone:hover,
+.icon--smartphone:focus {
+  fill: $blueColor;
+  outline: none;
+  transition: fill 0.25s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}

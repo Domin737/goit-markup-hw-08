@@ -1,0 +1,33 @@
+.what-we-do__main-figure-items {
+  display: flex;
+  gap: 30px;
+  margin: 0 0 94px 0;
+}
+
+.what-we-do__figure-item {
+  margin: 0;
+  flex-basis: calc((100% - 60px) / 3);
+  position: relative;
+}
+
+.what-we-do__img-item {
+  width: 100%;
+}
+
+.what-we-do__info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  padding: 27px;
+  width: 100%;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: $whiteColor;
+  bottom: 4px;
+}
