@@ -19,8 +19,10 @@
 }
 
 .figure-item__img {
-  width: 100%;
+  max-width: 100%;
   vertical-align: bottom;
+  display: block;
+  height: auto;
 }
 
 .figure-item__figcaption-container {

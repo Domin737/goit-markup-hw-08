@@ -61,8 +61,11 @@
 }
 
 .top-wrapper__img-item {
-  width: 100%;
+  max-width: 100%;
   vertical-align: bottom;
+
+  display: block;
+  height: auto;
 }
 
 .hidden-info {
