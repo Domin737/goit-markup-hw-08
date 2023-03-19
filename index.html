@@ -566,15 +566,16 @@
 
     <script src="./js/modal.js"></script>
 
-    <!-- ======== MOBILE MENU ======== -->
+    <!-- =============== MOBILE MENU =============== -->
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
+          class="close-menu-button"
           fill="currentColor"
           viewBox="0 0 20 20"
           xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
+          width="40"
+          height="40"
         >
           <path
             fill-rule="evenodd"
@@ -584,11 +585,46 @@
         </svg>
       </button>
 
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
+      <ul class="mobile-menu__sites">
+        <li>
+          <a class="mobile-menu__sites--page-link" href="./index.html"
+            >Agencja</a
+          >
+        </li>
+        <li>
+          <a class="mobile-menu__sites--page-link" href="./portfolio.html"
+            >Portfolio</a
+          >
+        </li>
+        <li><a class="mobile-menu__sites--page-link" href="#">Kontakt</a></li>
+      </ul>
+      <ul class="mobile-menu__contacts">
+        <li>
+          <a class="mobile-menu__contacts--tel-link" href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li>
+          <a
+            class="mobile-menu__contacts--mail-link"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__social">
+        <li>
+          <a class="mobile-menu__social--link" href="#">Instagram</a>
+        </li>
+        <li>
+          <a class="mobile-menu__social--link" href="#">Twitter</a>
+        </li>
+        <li>
+          <a class="mobile-menu__social--link" href="#">Facebook</a>
+        </li>
+        <li>
+          <a class="mobile-menu__social--link-nonborder" href="#">Linkedin</a>
+        </li>
       </ul>
     </div>
     <script

@@ -44,10 +44,17 @@
   .main-features-card__item {
     flex-basis: calc((100% - 30px) / 2);
   }
+  .main-features-card__header-text {
+    text-align: left;
+  }
 }
 
 @media (min-width: 1200px) {
   .main-features-card__item {
     flex-basis: calc((100% - 90px) / 4);
+  }
+
+  .main-features-card__header-text {
+    text-align: left;
   }
 }

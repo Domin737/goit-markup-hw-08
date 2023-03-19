@@ -6,7 +6,6 @@
 .footer .flex {
   display: flex;
   gap: 70px;
-  // align-items: baseline;
 
   flex-direction: column;
   text-align: center;
@@ -131,7 +130,6 @@
 
 .footer__newsletter-input {
   padding: 15px 16px;
-  // width: 358px;
   width: 100%;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -217,10 +215,22 @@
 @media (min-width: 1200px) {
   .footer .flex {
     flex-wrap: nowrap;
+    text-align: left;
+
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
   }
 
   .footer__newsletter-form {
+    display: flex;
+    align-items: baseline;
     width: auto;
+  }
+
+  .footer__newsletter-wrapper {
+    display: flex;
+    flex-direction: unset;
   }
 
   .footer__newsletter-input {
