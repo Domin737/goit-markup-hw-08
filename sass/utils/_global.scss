@@ -10,23 +10,17 @@ body {
   color: $textColor;
 }
 
-// @media (max-width: 320px) {
-//   body {
-//     width: 320px;
-//   }
-// }
+@media (max-width: 320px) {
+  body {
+    width: 320px;
+  }
+}
 
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
-
-// @media (max-width: 320px) {
-//   .container {
-//     min-width: 320px;
-//   }
-// }
 
 @media (min-width: 1200px) {
   .container {
