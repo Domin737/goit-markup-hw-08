@@ -13,8 +13,8 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background: $whiteColor;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -23,6 +23,13 @@
     opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   transform: translate3d(-50%, -50%, 0) scale3d(1, 1, 1);
   opacity: 1;
+}
+
+@media (min-width: 1200px) {
+  .backdrop .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .backdrop.is-hidden {
@@ -43,10 +50,16 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  margin: 8px 0 0 490px;
+  margin: 8px 0 0 412px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   background: $whiteColor;
   cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .modal__close-button {
+    margin: 8px 0 0 490px;
+  }
 }
 
 .modal__close-button .modal__close-x-button {
